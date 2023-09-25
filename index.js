@@ -3,30 +3,30 @@ function updateEmployeeWithKeyAndValue(object, key, value) {
     let object2 = { ...object };
     object2[key] = value;
     return object2;
-  }
-  console.log(
+}
+console.log(
     updateEmployeeWithKeyAndValue(employee, "streetAddress", "11 Broadway")
-  );
-  function destructivelyUpdateEmployeeWithKeyAndValue(object, key, value) {
+);
+function destructivelyUpdateEmployeeWithKeyAndValue(object, key, value) {
     object[key] = value;
     return object;
-  }
-  console.log(
+}
+console.log(
     destructivelyUpdateEmployeeWithKeyAndValue(
-      employee,
-      "streetAddress",
-      "12 Broadway"
+    employee,
+    "streetAddress",
+    "12 Broadway"
     )
-  );
-  
-  function deleteFromEmployeeByKey(object, key) {
+);
+
+function deleteFromEmployeeByKey(object, key) {
     let object3 = { ...object };
     delete object3[key];
     return object3;
-  }
-  console.log(deleteFromEmployeeByKey(employee, "name"));
-  function destructivelyDeleteFromEmployeeByKey(object, key) {
+}
+console.log(deleteFromEmployeeByKey(employee, "name"));
+function destructivelyDeleteFromEmployeeByKey(object, key) {
     delete object[key];
     return object;
-  }
-  console.log(destructivelyDeleteFromEmployeeByKey(employee, "name"));
+}
+console.log(destructivelyDeleteFromEmployeeByKey(employee, "name"));
