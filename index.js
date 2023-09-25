@@ -1,4 +1,7 @@
 // Write your solution in this file!
+let employee = {
+    name: "sam",
+};
 function updateEmployeeWithKeyAndValue(object, key, value) {
     let object2 = { ...object };
     object2[key] = value;
