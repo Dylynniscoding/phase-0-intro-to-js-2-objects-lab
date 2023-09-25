@@ -12,7 +12,7 @@ describe('employees', function() {
 
     it('returns an employee with the original key value pairs and the new key value pair', function () {
       expect(updateEmployeeWithKeyAndValue(employee, 'streetAddress', '11 Broadway')).to.eql({
-        const employee = {
+      
         
         name: 'Sam',
         streetAddress: '11 Broadway' }
@@ -35,7 +35,7 @@ describe('employees', function() {
       });
 
       expect(employee).to.eql({
-        const obj = {
+        
         name: 'Sam',
         streetAddress: '12 Broadway' }
       });
