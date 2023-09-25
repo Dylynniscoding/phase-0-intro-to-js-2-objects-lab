@@ -15,7 +15,7 @@ describe('employees', function() {
       
         
         name: 'Sam',
-        streetAddress: '11 Broadway' }
+        streetAddress: '11 Broadway' 
       });
     });
 
@@ -31,7 +31,7 @@ describe('employees', function() {
       expect(destructivelyUpdateEmployeeWithKeyAndValue(employee, 'streetAddress', '12 Broadway')).to.eql({
         
         name: 'Sam',
-        streetAddress: '12 Broadway' }
+        streetAddress: '12 Broadway' 
       });
 
       expect(employee).to.eql({
