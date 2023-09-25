@@ -12,7 +12,8 @@ describe('employees', function() {
 
     it('returns an employee with the original key value pairs and the new key value pair', function () {
       expect(updateEmployeeWithKeyAndValue(employee, 'streetAddress', '11 Broadway')).to.eql({
-        const obj = {employee
+        const employee = {
+        
         name: 'Sam',
         streetAddress: '11 Broadway' }
       });
@@ -28,13 +29,13 @@ describe('employees', function() {
   describe('destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value)', function () {
     it('updates `employee` with the given `key` and `value` (it is destructive) and returns the entire updated employee', function () {
       expect(destructivelyUpdateEmployeeWithKeyAndValue(employee, 'streetAddress', '12 Broadway')).to.eql({
-        const obj { employee
+        const employee { 
         name: 'Sam',
         streetAddress: '12 Broadway' }
       });
 
       expect(employee).to.eql({
-        const obj = {employee
+        const employee = {
         name: 'Sam',
         streetAddress: '12 Broadway' }
       });
